@@ -1,0 +1,479 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: rgba(21, 149, 235, 0.3);
+
+}
+canvas {
+  display: block;
+}
+
+.clickbuttonContainer{
+  width: 100%;
+  height: auto;
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  margin-top: 12%;
+}
+.desc{
+  overflow: visible;
+}
+.clickbutton{
+  background-color: transparent;
+  border-width: 0;
+  font-size: 300;
+  
+}
+.clickbutton:hover{
+  transform: scale(1.1);
+}
+.clickbutton:active{
+  transform: scale(1);
+}
+.frameContiner{
+  width: 100%;
+  height: 100%;
+}
+.rectTop{
+  width: 100%;
+  height: 2.5%;
+  background-color: rgba(50, 120, 175, 0.5);
+}
+
+.rectBottom{
+  width: 100%;
+  height: 3%;
+  position:absolute;
+  bottom: -5;
+  background-color: rgba(50, 120, 175, 0.6);
+}
+.rects1{
+  width: 1.25%;
+  height: 95.3%;
+  position:absolute;
+  left:33%;
+  background-color: rgba(50, 120, 175, 0.5);
+}
+.rectcenter{
+  width: 1.25%;
+  height: 95.3%;
+  position:absolute;
+  left:49.4%;
+  background-color: rgba(50, 120, 175, 0.5);
+}
+.rects2{
+  width: 1.25%;
+  height: 95.3%;
+  position:absolute;
+  right: 33%;
+  background-color: rgba(50, 120, 175, 0.5);
+}
+
+.buttonC{
+  width: 33%;
+  position: absolute;
+  display: flex;
+}
+
+.buttonC2{
+  width: 33%;
+  margin-left: 67%;
+  position: absolute;
+  display: flex;
+}
+
+.itemtitle{
+    user-select: none;
+    width: 100%;
+    font-size: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+      
+        
+}
+.content {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 90%;
+  background-color: rgba(212, 241, 244, 1);
+  margin:auto;
+  
+  flex-wrap: wrap;
+  max-height: 0;
+  
+
+  
+}
+.buttonContainer{
+  display: flex;
+  margin-top: 3%;
+  justify-content:space-evenly;
+ 
+}
+.img{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.vpsc{
+  margin-top: 15%;
+  text-align: center;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.vpsc2{
+  text-align: center;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -25%;
+  
+}
+.effButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(21, 149, 235, 0.1);
+  color: green;
+  background-image:url("assets/renewable-energy.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  
+}
+
+.effButton:hover{
+  transform: scale(1.1);
+  background-image:url("assets/renewable-energy-colored.png");
+  background-size: 70%;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.effcreditButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(21, 149, 235, 0.1);
+  color: green;
+  background-image:url("assets/renewable-energy.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  
+}
+
+.effButton:active{
+  transform: scale(0.9);
+  background-image:url("assets/renewable-energy-colored.png");
+  background-size: 70%;
+  box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+.yButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(21, 149, 235, 0.15);
+  color: green;
+  background-image:url("assets/knowledge.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  
+  
+}
+
+.yButton:hover{
+  transform: scale(1.1);
+  background-image:url("assets/knowledge-colored.png");
+  background-size: 70%;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+
+
+}
+.yButton:active{
+  transform: scale(0.9);
+  background-image:url("assets/knowledge-colored.png");
+  background-size: 70%;
+  box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.mButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(21, 149, 235, 0.15);
+  color: green;
+  background-image:url("assets/money-loss.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  
+}
+
+.mButton:hover{
+  transform: scale(1.1);
+  background-image:url("assets/money-loss-colored.png");
+  background-size: 70%;
+
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+.mButton:active{
+  transform: scale(0.9);
+  background-image:url("assets/money-loss-colored.png");
+  background-size: 70%;
+  box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+.tButton{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(21, 149, 235, 0.15);
+  color: green;
+  background-image:url("assets/tier-upgrade.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  
+}
+
+.tButton:hover{
+  transform: scale(1.1);
+  background-image:url("assets/tier-upgrade-colored.png");
+  background-size: 70%;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+
+
+}
+.tButton:active{
+  transform: scale(0.9);
+  background-image:url("assets/tier-upgrade-colored.png");
+  background-size: 70%;
+  box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.itemContainer{
+  width: 31.75%;
+  position: absolute;
+  height: 85%;
+  margin-top: 4%;
+  padding-right:1.25%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+.specialContainer{
+  width: 31.75%;
+  margin: 66.7%;
+  
+  position: absolute;
+  height: 85%;
+  margin-top: 4%;
+  padding-right:1.25%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+.textContainer{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.item{
+  width:100%;
+  height: auto;
+  margin-top: 10%;
+  background-color: rgba(117, 230, 218, 0.3);
+  user-select: none;
+  text-align: left;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+  border-width: 3.2px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 1%;
+
+
+}
+
+.buy{
+  float: right;
+  background-color: transparent;
+  margin-right: 3%;
+  height: 7%;
+  min-width: 15%;
+  width: auto;
+  margin-top: 2%;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8);
+  
+}
+
+.buy:hover{
+  background-color: rgba(212, 241, 244, 1);
+  transform: scale(1.1);
+
+}
+.buy:active{
+  background-color: transparent;
+  transform: scale(1);
+  box-shadow: inset 3px 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgba(212, 241, 244, 1);
+
+}
+.main{
+  text-align: center;
+  user-select: none;
+  margin-top: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.main2{
+  text-align: center;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.upgradeButton{
+  width: 90%;
+  height: 3%;
+  display: flex;
+  margin: auto; 
+  background-color: transparent;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+.upgradeButton:hover{
+  cursor:pointer;
+  transform: scale(1.05);
+  background-color: rgba(212, 241, 244, 1);
+}
+.upgradeButton:active{
+  background-color: rgba(212, 241, 244, 1);
+
+  cursor:pointer;
+  transform: scale(1);
+}
+
+.title{
+  font-size: 20;
+}
+
+p{
+  margin: 0 0 0 0;
+}
+.vcontainer{
+  
+  position: absolute;
+  margin-left: -50;
+  width: 85px;
+  left: 50%;
+  
+
+}
+.line{
+  width: 200px;
+  margin-top: 50%;
+  margin-left: -55;
+  background-color: black;
+  border-bottom: none;
+  position: absolute;
+
+}
+.line2{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-left: -55;
+  background-color: black;
+  border-bottom: none;
+  position: absolute;
+
+}
+.helpbuttoncontainer{
+  position: fixed;
+  display: flex;
+  height: 2.5%;
+  width: 100%;
+  justify-content: center;
+
+
+}
+.helpbutton{
+  font-size: 10;
+  width: 31.6%;
+  background-color: transparent;
+
+}
+.helpbutton:hover{
+  background-color: rgba(212, 241, 244, 0.5);
+}
+
+
+.buttonC3{
+  width: 49.4%;
+  position: absolute;
+  display: flex;
+}
+
+.buttonC4{
+  width: 49.4%;
+  margin-left: 50.6%;
+  position: absolute;
+  display: flex;
+}
+.backlink{
+  top:95%;
+  position: absolute;
+}
+
+.popupc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+}
+.gpop{
+  background-color: rgba(21, 149, 235);
+  width: 35%;
+  height: 35%;
+  text-align: center;
+  
+}
+.popupbutton{
+  width: auto;
+  background-color: transparent;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+  height: 25;  
+}
+.popupbutton:hover{
+  transform: scale(1.1);
+  background-color: rgba(212, 241, 244, 1);
+}
+.popupbutton:active{
+  transform: scale(1);
+  box-shadow: inset 3px 5px 5px rgba(0, 0, 0, 0.4);
+
+}

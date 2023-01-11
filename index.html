@@ -1,0 +1,393 @@
+<head>
+    <script src="https://kit.fontawesome.com/9b4f8a352d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>
+        Main
+    </title>
+
+    <title>Info</title>
+
+</head>
+
+<body>
+
+    <div class="vcontainer">
+        <hr color="black" class="line">
+
+        <p id="variables" ; class='main'>0
+
+        </p>
+
+
+        <p id="yvariables" ; class='main2'>
+            0</p>
+
+
+        <p id="xvps" ; class='vpsc'>0
+        </p>
+        <br>
+
+        <p id="yvps" ; class='vpsc2'>
+            0</p>
+        <hr color="black" class="line2">
+
+
+    </div>
+    <script src="sketch.js"></script>
+
+    <div class="clickbuttoncontainer"><button class="clickbutton" onclick="add(), press.play()">𝒢</button></div>
+    </div>
+    <script>
+        var press = new Audio("./assets/button_press.mp3")
+        var upgrade = new Audio("./assets/upgrades.mp3")
+    </script>
+    <div class="rectTop"></div>
+    <div class="rectBottom"></div>
+    <div class="rects1"></div>
+    <div class="rects2"> </div>
+
+    <div class="buttonC">
+        <button class="itemtitle" ; id="upgradeButton" ;>Items</button>
+
+    </div>
+    <div class="buttonC2">
+        <button class="itemtitle" ; id="upgradeButton" ;>Specials</button>
+    </div>
+
+    <div class="itemContainer">
+        <div class="item" id="alb" ;>
+            <span class="title" id="math"> Algebra </span>
+            <button class="buy" ; id="albuy" onclick="albuy(), press.play()">Buy</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p style="margin-top: 5px;" id="mathex">3𝑥+2=4</p>
+            </span>
+            <p id="alowned">owned</p>
+            <p id="alvps">Vps: </p>
+
+            <br>
+            <p id="mathdesc">placeholder</p>
+            <br>
+            <button id='upgradeButton' ; class=upgradeButton> Upgrades</button>
+            <div class="content">
+                <div class="buttonContainer">
+                    <button class="effButton" onmouseover="aleffC()" ; onmouseleave="alrevert()" ;
+                        onclick="aleffU(), upgrade.play()" ;>
+                    </button>
+                    <button class="yButton" onmouseover="alyC()" ; onmouseleave="alrevert()" ;
+                        onclick="alyU(), upgrade.play()"></button>
+                    <button class="mButton" onmouseover="alMC()" ; onmouseleave="alrevert()" ;
+                        onclick="alMU(), upgrade.play()"></button>
+                    <button class="tButton" onmouseover="alTC()" ; onmouseleave="alrevert()" ;
+                        onclick="alTU(), upgrade.play()"></button>
+
+                </div>
+
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="aldesc">
+                </p>
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="aldesc2">
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+
+        </div>
+        <div class="item" id="scb" ;>
+            <span class="title" id="sc"> Algebra </span>
+            <button class="buy" ; id="scbuy" onclick="scbuy(), press.play()">Buy</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p style="margin-top: 5px;" id="scex">3𝑥+2=4</p>
+            </span>
+            <p id="scowned">owned</p>
+            <p id="scvps">Vps: </p>
+
+            <br>
+            <p id="scidesc">placeholder</p>
+            <br>
+            <button id='upgradeButton' ; class=upgradeButton> Upgrades</button>
+            <div class="content">
+                <div class="buttonContainer">
+                    <button class="effButton" onmouseover="sceffC()" ; onmouseleave="screvert()" ;
+                        onclick="sceffU(), upgrade.play()" ;>
+                    </button>
+                    <button class="yButton" onmouseover="scyC()" ; onmouseleave="screvert()" ;
+                        onclick="scyU(), upgrade.play()"></button>
+                    <button class="mButton" onmouseover="scMC()" ; onmouseleave="screvert()" ;
+                        onclick="scMU(), upgrade.play()"></button>
+                    <button class="tButton" onmouseover="scTC()" ; onmouseleave="screvert()" ;
+                        onclick="scTU(), upgrade.play()"></button>
+
+                </div>
+
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="scdesc">
+                </p>
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="scdesc2">
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="item" id="sob" ;>
+            <span class="title" id="so"> Algebra </span>
+            <button class="buy" ; id="sobuy" onclick="sobuy(), press.play()">Buy</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+            </span>
+            <p id="soowned">owned</p>
+            <p id="sovps">Vps: </p>
+
+            <br>
+            <p id="soidesc">placeholder</p>
+            <br>
+            <button id='upgradeButton' ; class=upgradeButton> Upgrades</button>
+            <div class="content">
+                <div class="buttonContainer">
+                    <button class="effButton" onmouseover="soeffC()" ; onmouseleave="sorevert()" ;
+                        onclick="soeffU(), upgrade.play()" ;>
+                    </button>
+                    <button class="yButton" onmouseover="soyC()" ; onmouseleave="sorevert()" ;
+                        onclick="soyU(), upgrade.play()"></button>
+                    <button class="mButton" onmouseover="soMC()" ; onmouseleave="sorevert()" ;
+                        onclick="soMU(), upgrade.play()"></button>
+                    <button class="tButton" onmouseover="soTC()" ; onmouseleave="sorevert()" ;
+                        onclick="soTU(), upgrade.play()"></button>
+
+                </div>
+
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="sodesc">
+                </p>
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="sodesc2">
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="item" id="elb" ;>
+            <span class="title" id="el"> Algebra </span>
+            <button class="buy" ; id="elbuy" onclick="elbuy(), press.play()">Buy</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+            </span>
+            <p id="elowned">owned</p>
+            <p id="elvps">Vps: </p>
+
+            <br>
+            <p id="elidesc">placeholder</p>
+            <br>
+            <button id='upgradeButton' ; class=upgradeButton> Upgrades</button>
+            <div class="content">
+                <div class="buttonContainer">
+                    <button class="effButton" onmouseover="eleffC()" ; onmouseleave="elrevert()" ; onclick="eleffU()" ;>
+                    </button>
+                    <button class="yButton" onmouseover="elyC()" ; onmouseleave="elrevert()" ;
+                        onclick="elyU(), upgrade.play()"></button>
+                    <button class="mButton" onmouseover="elMC()" ; onmouseleave="elrevert()" ;
+                        onclick="elMU(), upgrade.play()"></button>
+                    <button class="tButton" onmouseover="elTC()" ; onmouseleave="elrevert()" ;
+                        onclick="elTU(), upgrade.play()"></button>
+
+                </div>
+
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="eldesc">
+                </p>
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="eldesc2">
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="item" id="peb" ;>
+            <span class="title" id="pe"> Algebra </span>
+            <button class="buy" ; id="pebuy" onclick="pebuy(), press.play()">Buy</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+            </span>
+            <p id="peowned">owned</p>
+            <p id="pevps">Vps: </p>
+
+            <br>
+            <p id="peidesc">placeholder</p>
+            <br>
+            <button id='upgradeButton' ; class=upgradeButton> Upgrades</button>
+            <div class="content">
+                <div class="buttonContainer">
+                    <button class="effButton" onmouseover="peeffC()" ; onmouseleave="perevert()" ;
+                        onclick="peeffU(), upgrade.play()" ;>
+                    </button>
+                    <button class="yButton" onmouseover="peyC()" ; onmouseleave="perevert()" ;
+                        onclick="peyU(), upgrade.play()"></button>
+                    <button class="mButton" onmouseover="peMC()" ; onmouseleave="perevert()" ;
+                        onclick="peMU(), upgrade.play()"></button>
+                    <button class="tButton" onmouseover="peTC()" ; onmouseleave="perevert()" ;
+                        onclick="peTU(), upgrade.play()"></button>
+
+                </div>
+
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="pedesc">
+                </p>
+                <p style="display:flex; justify-content: center;" ; class="desc" ; id="pedesc2">
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    <div class="specialContainer">
+        <div class="item" id="clickb" ;>
+            <span class="title"> Auto-play switch</span>
+
+            <button class="buy" onclick="toggle(), press.play()">Click me to toggle</button>
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <br>
+                <p>Toggles Auto-play
+                <p id="autoplay">Current status: off</p>
+        </div>
+
+
+        <div class="item" id="clickb" ;>
+            <span class="title"> Coffee Machine</span>
+
+            <button class="buy" ; id="clickbuy" onclick="clickbuy(), press.play()">Buy</button>
+            <br>
+            <img src="./assets/coffee-cup.png" alt="" class="img">
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p id="clicktext">Doubles click efficiency</p>
+            </span>
+            <p id="clickowned">owned</p>
+            <p id="clickvps">Click efficiency: </p>
+
+            <br>
+            <p>Gain more energy per click with caffine.
+        </div>
+
+        <div class="item" id="studentb" ;>
+            <span class="title">Smarter Students</span>
+
+            <button class="buy" ; id="studentbuy" onclick="studentbuy(), press.play()">Buy</button>
+            <br>
+            <img src="./assets/student-guy.png" alt="" class="img">
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p id="studenttext">Increases efficiency by 10%</p>
+            </span>
+            <p id="studentowned">owned</p>
+
+
+            <br>
+            <p>Your friend group becomes more intelligent, which increasing your overall knowledge.
+        </div>
+
+
+        <div class="item" id="teacherb" ;>
+            <span class="title">Better Teachers</span>
+
+            <button class="buy" ; id="teacherbuy" onclick="teacherbuy(), press.play()">Buy</button>
+            <br>
+            <img src="./assets/teacher-guy.png" alt="" class="img">
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p id="teachertext">Increases efficiency by 50%</p>
+            </span>
+            <p id="teacherowned">owned</p>
+
+
+            <br>
+            <p>Better teachers allowed for more information retained.
+        </div>
+
+
+        <div class="item" id="schoolb" ;>
+            <span class="title">Improved school</span>
+
+            <button class="buy" ; id="schoolbuy" onclick="schoolbuy(), press.play()">Buy</button>
+            <br>
+            <img src="./assets/school.png" alt="" class="img">
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p id="schooltext">Increases efficiency by 100%</p>
+            </span>
+            <p id="schoolowned">owned</p>
+
+
+            <br>
+            <p>Better school facilities gives a better learning envorniment.
+        </div>
+
+        <div class="item" id="degb" ;>
+            <span class="title">Graduation Degree</span>
+
+            <button class="buy" ; id="degbuy" onclick="degbuy(), press.play()">Buy</button>
+            <br>
+            <img src="./assets/certificate.png" alt="" class="img">
+            <br>
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p id="degtext">Graduate High School!</p>
+            </span>
+            <p>Requires Max level in all subjects</p>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="popupc" ; id="popup">
+        <div class="gpop">
+            <h2>Congratulations!</h2>
+            <br>
+            <p>You've Graduated.</p>
+            <p>You can continue, or close the tab.</p>
+            <br>
+            <button class="popupbutton" ; onclick="re()">Keep going?</button>
+        </div>
+    </div>
+
+    <script>
+        var open = new Audio("./assets/open.mp3")
+        var drop = document.getElementsByClassName("upgradeButton");
+        var i;
+
+        for (i = 0; i < drop.length; i++) {
+            drop[i].addEventListener("click", function () {
+                open.play()
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+        function re() {
+            const a = document.getElementById('popup')
+            a.remove()
+        }
+
+
+    </script>
+</body>

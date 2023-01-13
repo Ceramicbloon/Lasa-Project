@@ -1,13 +1,8 @@
 Disclaimer:
-I am by no means a graphic artist.
+I am by no means a graphic, nor a sound artists.
 
-I don't know how to use a online drawing program for my icons, nor I am able to draw them.
-
-However, I am good at importing from flaticon.
-
-All the icons I used are from flaticon, and attributes are below:
-
-I also took some equations from the internet because I know nothing about calculus, physics, and other kinds of advanced subjects.
+All the icons I used are from flaticon and all the sounds from Zapsplat. 
+Attributes are listed below:
 
 Everything else is purely by me.
 
@@ -22,3 +17,5 @@ Attributes:
 [Student](https://www.flaticon.com/free-icon/reading_948256?related_id=948225&origin=search) icon by [Eucalyp](https://www.flaticon.com/authors/eucalyp)
 
 [Teacher](https://www.flaticon.com/free-icon/instructor_9139098?term=teacher&page=1&position=82&origin=search&related_id=9139098) icon by [Muhammad-Usman](https://www.flaticon.com/authors/muhammad-usman)
+
+Sounds from [Zapsplat](https://www.zapsplat.com/)

@@ -1,5 +1,5 @@
 Disclaimer:
-I am by not a graphic, nor a sound artists.
+I am neather a graphic artist, nor a sound artist.
 
 All the icons I used are from flaticon and all the sounds from Zapsplat. 
 Attributes are listed below:

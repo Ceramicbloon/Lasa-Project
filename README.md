@@ -1,10 +1,10 @@
 Disclaimer:
-I am by no means a graphic, nor a sound artists.
+I am by not a graphic, nor a sound artists.
 
 All the icons I used are from flaticon and all the sounds from Zapsplat. 
 Attributes are listed below:
 
-Everything else is purely by me.
+Everything else (except for the p5 libraries) are purely by me.
 
 ---
 
